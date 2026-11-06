@@ -1,15 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Introduction</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Izamhie R. Bernil">
+  <title>Iza's Personal Profile</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f3e8ff; color: #333333; margin: 30px; }
+    h1, h2 { color: #5a2db0; }
+    .section { background-color: white; padding: 15px; margin-bottom: 20px; border-radius: 10px; }
+    .highlight { color: #7e3ff2; font-weight: bold; }
+    #profile-photo { border-radius: 10px; border: 3px solid #7e3ff2; }
+    table, th, td { border: 1px solid #999999; border-collapse: collapse; padding: 8px; }
+    th { background-color: #e0ccff; }
+  </style>
 </head>
 <body>
 
-    <h1>Hi, I'm Iza!</h1>
-    <p>My name is Izamhie R. Bernil. I am 19 years old and I study IT.</p>
-    <p>You can Call me Iza for short.</p>
-    <p>I like watching K-dramas and playing with my cats.</p>
-    <img src="Intraa.jpg" alt="Intraa" width="300">
+  <h1>Personal Profile Web Page</h1>
+
+  <div class="section" id="about">
+    <h2>About Me (Izamhie R. Bernil)</h2>
+    <p>Hi, I'm <span class="highlight">Iza</span>! I am an IT student who is learning web programming.</p>
+  </div>
+
+  <div class="section" id="education">
+    <h2>Education / Achievements</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Nickname</td>
+        <td>Iza</td>
+      </tr>
+      <tr>
+        <td>Senior High School</td>
+        <td>BNHS, Taguig City</td>
+      </tr>
+      <tr>
+        <td>Strand</td>
+        <td>STEM</td>
+      </tr>
+      <tr>
+        <td>Course</td>
+        <td>Information Technology</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section" id="experience">
+    <h2>IT Experience</h2>
+    <p>In Grade 10, I learned <span class="highlight">basic HTML</span> in class. I can also remove and put back the parts of a system unit.</p>
+  </div>
+
+  <div class="section" id="hobbies">
+    <h2>Hobbies &amp; Interests</h2>
+    <ul>
+      <li>Watching K-dramas</li>
+      <li>Playing with my cats</li>
+    </ul>
+  </div>
+
+  <div class="section" id="goals">
+    <h2>Goals in Life / Dream</h2>
+    <ol>
+      <li>Be financially stable</li>
+      <li>Own a home and a car</li>
+      <li>Build a career in data analytics</li>
+    </ol>
+  </div>
+
+  <div class="section" id="links">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://github.com/RAM-izamhie" target="_blank">My GitHub profile</a></li>
+      <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+      <li><a href="../home/index.html">Go to my home page</a></li>
+    </ul>
+  </div>
+
+  <div class="section" id="gallery">
+    <h2>Picture Gallery</h2>
+    <img id="profile-photo" src="Intraa.jpg" alt="Intraa" width="300">
+  </div>
 
 </body>
 </html>

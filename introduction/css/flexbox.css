@@ -2,20 +2,49 @@ body {
   font-family: Arial, sans-serif;
   background-color: #ffe4ef;
   color: #333333;
-  margin: 30px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #e86aa6;
+  padding: 20px;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+nav a {
+  color: white;
+  background-color: #c77dff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 25px;
+  padding: 30px;
+  flex: 1;
 }
 
-h1, h2 { color: #e86aa6; }
-
-h1 {
-  width: 100%;
-  text-align: center;
-}
+h2 { color: #e86aa6; }
 
 .section {
   background-color: white;
@@ -26,7 +55,30 @@ h1 {
   box-sizing: border-box;
 }
 
+#about {
+  flex: 2 1 420px;
+  max-width: 600px;
+}
+
+#gallery {
+  align-self: center;
+  text-align: center;
+}
+
+footer {
+  background-color: #ffb6d5;
+  text-align: center;
+  padding: 12px;
+}
+
 .highlight { color: #c77dff; font-weight: bold; }
 #profile-photo { border-radius: 10px; border: 3px solid #ffb6d5; }
 table, th, td { border: 1px solid #999999; border-collapse: collapse; padding: 8px; }
 th { background-color: #f1e8ff; }
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

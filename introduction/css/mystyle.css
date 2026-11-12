@@ -2,6 +2,7 @@
 
 body {
   background: linear-gradient(160deg, #ffe4ef, #ffffff, #f1e8ff);
+  background-attachment: fixed;
   font-family: 'Quicksand', sans-serif;
   color: #8a5a78;
   text-align: center;
@@ -11,7 +12,7 @@ body {
 
 h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 50px;
+  font-size: 55px;
   background: linear-gradient(90deg, #ff9ec7, #ffffff, #c8a8ff, #ff9ec7);
   background-size: 300% 100%;
   -webkit-background-clip: text;
@@ -27,15 +28,16 @@ h1 {
 
 
 .heart-frame {
-  width: 500px;
-  height: 500px;
-  margin: 50px auto;
+  width: 300px;
+  height: 300px;
+  margin: 70px auto;
+  transform: scale(1.4);
   filter: drop-shadow(0 0 12px #ffb6d5);
 }
 
 .heart-frame img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   clip-path: path('M150 280 C 20 180, 0 100, 60 50 C 100 15, 140 35, 150 70 C 160 35, 200 15, 240 50 C 300 100, 280 180, 150 280 Z');
 }
@@ -43,22 +45,23 @@ h1 {
 
 .book {
   background-color: white;
-  max-width: 550px;
-  margin: 40px auto;
-  padding: 40px 50px;
-  border-left: 12px solid #ffb6d5;
-  border-radius: 15px;
-  box-shadow: 0 0 20px #e6d4ff;
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 25px 45px;
+  border-left: 16px solid #ffb6d5;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #e6d4ff;
   text-align: left;
 }
 
 .book h2 {
   font-family: 'Dancing Script', cursive;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   color: #e86aa6;
 }
 
 .book li {
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 14px;
 }

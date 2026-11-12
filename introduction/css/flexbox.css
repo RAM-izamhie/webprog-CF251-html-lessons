@@ -8,6 +8,10 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #e86aa6;
   padding: 20px;
@@ -50,43 +54,4 @@ h2 { color: #e86aa6; }
   background-color: white;
   padding: 15px;
   border-radius: 10px;
-  flex: 1 1 300px;
-  max-width: 420px;
-  box-sizing: border-box;
-}
-
-#about {
-  flex: 2 1 420px;
-  max-width: 600px;
-}
-
-#gallery {
-  align-self: flex-start;
-  text-align: center;
-
-}
-
-footer {
-  background-color: #ffb6d5;
-  text-align: center;
-  padding: 12px;
-}
-
-.highlight { color: #c77dff; font-weight: bold; }
-#profile-photo { border-radius: 10px; border: 3px solid #ffb6d5; }
-table, th, td { border: 1px solid #999999; border-collapse: collapse; padding: 8px; }
-th { background-color: #f1e8ff; }
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-html {
-  scroll-behavior: smooth;
-}
-
-.section:target {
-  outline: 3px solid #c77dff;
-}
+  flex: 1 1 200px;

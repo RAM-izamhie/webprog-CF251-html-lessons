@@ -1,8 +1,64 @@
+/* Fairy theme: baby pink, white and very light lilac */
+
 body {
-  background-color: rgb(230, 173, 227);
+  background: linear-gradient(160deg, #ffe4ef, #ffffff, #f1e8ff);
+  font-family: 'Quicksand', sans-serif;
+  color: #8a5a78;
+  text-align: center;
+  padding: 20px;
 }
 
+/* shimmering title */
 h1 {
-  color: rgb(128, 0, 105);
-  margin-left: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  background: linear-gradient(90deg, #ff9ec7, #ffffff, #c8a8ff, #ff9ec7);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+/* picture in the middle, shaped like a heart */
+.heart-frame {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  filter: drop-shadow(0 0 12px #ffb6d5);
+}
+
+.heart-frame img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  clip-path: path('M150 280 C 20 180, 0 100, 60 50 C 100 15, 140 35, 150 70 C 160 35, 200 15, 240 50 C 300 100, 280 180, 150 280 Z');
+}
+
+/* the "book" with the list */
+.book {
+  background-color: white;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border-left: 12px solid #ffb6d5;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #e6d4ff;
+  text-align: left;
+}
+
+.book h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  text-align: center;
+  color: #e86aa6;
+}
+
+.book li {
+  margin-bottom: 10px;
 }

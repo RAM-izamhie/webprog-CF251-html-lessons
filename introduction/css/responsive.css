@@ -1,0 +1,23 @@
+/* ===== RESPONSIVE WEB DESIGN ===== */
+
+/* Images and tables never overflow */
+img { max-width: 100%; height: auto; }
+table { width: 100%; }
+
+/* Tablet */
+@media (max-width: 900px) {
+  body { margin: 20px; }
+  h1 { font-size: 28px; }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  body { margin: 12px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  .section { padding: 12px; }
+  nav ul { justify-content: center; }
+  nav a { font-size: 13px; padding: 5px 10px; }
+  #profile-photo { width: 100%; }
+  th, td { padding: 6px; font-size: 14px; }
+}

@@ -1,1 +1,73 @@
+/* ===== FLEXBOX: header and nav bar ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header h1 { margin: 0; }
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  background-color: #7e3ff2;
+  color: white;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+nav a:hover { background-color: #5a2db0; }
 
+/* ===== FLEXBOX: hobbies and goals as chips ===== */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.chips li {
+  background-color: #e0ccff;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+/* ===== FLEXBOX: links list ===== */
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+/* ===== FLEXBOX: center the gallery photo ===== */
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== FLEXBOX: footer ===== */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5a2db0;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Header stacks on small screens */
+@media (max-width: 700px) {
+  header { flex-direction: column; align-items: flex-start; }
+}

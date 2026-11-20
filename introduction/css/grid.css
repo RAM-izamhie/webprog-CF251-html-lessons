@@ -1,16 +1,17 @@
-/* CSS Grid layout */
+/* ===== CSS GRID: overall page layout ===== */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "title     title"
+    "header    header"
     "about     about"
     "education experience"
     "hobbies   goals"
-    "links     gallery";
+    "links     gallery"
+    "footer    footer";
   gap: 20px;
 }
-h1          { grid-area: title; margin: 0; }
+header      { grid-area: header; }
 #about      { grid-area: about; }
 #education  { grid-area: education; }
 #experience { grid-area: experience; }
@@ -18,19 +19,21 @@ h1          { grid-area: title; margin: 0; }
 #goals      { grid-area: goals; }
 #links      { grid-area: links; }
 #gallery    { grid-area: gallery; }
+footer      { grid-area: footer; }
 
 /* Single column on small screens */
 @media (max-width: 700px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "title"
+      "header"
       "about"
       "education"
       "experience"
       "hobbies"
       "goals"
       "links"
-      "gallery";
+      "gallery"
+      "footer";
   }
 }

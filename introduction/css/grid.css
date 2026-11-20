@@ -1,0 +1,36 @@
+/* CSS Grid layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title     title"
+    "about     about"
+    "education experience"
+    "hobbies   goals"
+    "links     gallery";
+  gap: 20px;
+}
+h1          { grid-area: title; margin: 0; }
+#about      { grid-area: about; }
+#education  { grid-area: education; }
+#experience { grid-area: experience; }
+#hobbies    { grid-area: hobbies; }
+#goals      { grid-area: goals; }
+#links      { grid-area: links; }
+#gallery    { grid-area: gallery; }
+
+/* Single column on small screens */
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "about"
+      "education"
+      "experience"
+      "hobbies"
+      "goals"
+      "links"
+      "gallery";
+  }
+}

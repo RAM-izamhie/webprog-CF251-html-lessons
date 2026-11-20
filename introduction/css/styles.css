@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; background-color: #f3e8ff; color: #333333; margin: 30px; }
+h1, h2 { color: #5a2db0; }
+.section { background-color: white; padding: 15px; border-radius: 10px; }
+.highlight { color: #7e3ff2; font-weight: bold; }
+#profile-photo { border-radius: 10px; border: 3px solid #7e3ff2; max-width: 100%; height: auto; }
+table, th, td { border: 1px solid #999999; border-collapse: collapse; padding: 8px; }
+th { background-color: #e0ccff; }

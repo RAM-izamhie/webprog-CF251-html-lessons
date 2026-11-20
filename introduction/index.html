@@ -5,58 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Izamhie R. Bernil">
   <title>Iza's Personal Profile</title>
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f3e8ff; color: #333333; margin: 30px; }
-    h1, h2 { color: #5a2db0; }
-    .section { background-color: white; padding: 15px; border-radius: 10px; }
-    .highlight { color: #7e3ff2; font-weight: bold; }
-    #profile-photo { border-radius: 10px; border: 3px solid #7e3ff2; max-width: 100%; height: auto; }
-    table, th, td { border: 1px solid #999999; border-collapse: collapse; padding: 8px; }
-    th { background-color: #e0ccff; }
-
-    /* CSS Grid layout */
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "title     title"
-        "about     about"
-        "education experience"
-        "hobbies   goals"
-        "links     gallery";
-      gap: 20px;
-    }
-    h1          { grid-area: title; margin: 0; }
-    #about      { grid-area: about; }
-    #education  { grid-area: education; }
-    #experience { grid-area: experience; }
-    #hobbies    { grid-area: hobbies; }
-    #goals      { grid-area: goals; }
-    #links      { grid-area: links; }
-    #gallery    { grid-area: gallery; }
-
-    /* Single column on small screens */
-    @media (max-width: 700px) {
-      .container {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "title"
-          "about"
-          "education"
-          "experience"
-          "hobbies"
-          "goals"
-          "links"
-          "gallery";
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/flexbox.css">
 </head>
 <body>
 
   <div class="container">
 
-    <h1>Personal Profile Web Page</h1>
+    <header>
+      <h1>Personal Profile Web Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="section" id="about">
       <h2>About Me (Izamhie R. Bernil)</h2>
@@ -91,12 +61,12 @@
 
     <div class="section" id="experience">
       <h2>IT Experience</h2>
-      <p>In Grade 10, I learned <span class="highlight">basic HTML</span> in class. I have also experince like removing and put back the parts of a system unit.</p>
+      <p>In Grade 10, I learned <span class="highlight">basic HTML</span> in class. I have also experience like removing and putting back the parts of a system unit.</p>
     </div>
 
     <div class="section" id="hobbies">
       <h2>Hobbies &amp; Interests</h2>
-      <ul>
+      <ul class="chips">
         <li>Watching K-dramas</li>
         <li>Playing with my cats</li>
       </ul>
@@ -104,16 +74,16 @@
 
     <div class="section" id="goals">
       <h2>Goals in Life / Dream</h2>
-      <ol>
+      <ul class="chips">
         <li>Be financially stable</li>
         <li>Own a home and a car</li>
         <li>Build a career in data analytics</li>
-      </ol>
+      </ul>
     </div>
 
     <div class="section" id="links">
       <h2>Links</h2>
-      <ul>
+      <ul class="link-list">
         <li><a href="https://github.com/RAM-izamhie" target="_blank">My GitHub profile</a></li>
         <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
         <li><a href="../home/index.html">Go to my home page</a></li>
@@ -124,6 +94,10 @@
       <h2>Picture Gallery</h2>
       <img id="profile-photo" src="Intraa.jpg" alt="Intraa" width="300">
     </div>
+
+    <footer>
+      <p>&copy; 2026 Izamhie R. Bernil</p>
+    </footer>
 
   </div>
 

@@ -1,7 +1,146 @@
-body { font-family: Arial, sans-serif; background-color: #f3e8ff; color: #333333; margin: 30px; }
-h1, h2 { color: #5a2db0; }
-.section { background-color: white; padding: 15px; border-radius: 10px; }
-.highlight { color: #7e3ff2; font-weight: bold; }
-#profile-photo { border-radius: 10px; border: 3px solid #7e3ff2; max-width: 100%; height: auto; }
-table, th, td { border: 1px solid #999999; border-collapse: collapse; padding: 8px; }
-th { background-color: #e0ccff; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a0d15;
+  color: #fff5f9;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Baby pink glitter & sparkle header */
+.hero {
+  background:
+    radial-gradient(circle at 12% 25%, #ffffff 0 2px, transparent 3px),
+    radial-gradient(circle at 24% 72%, #ffe6f2 0 3px, transparent 4px),
+    radial-gradient(circle at 42% 35%, #ffffff 0 2.5px, transparent 4px),
+    radial-gradient(circle at 58% 78%, #fff0f7 0 2px, transparent 3px),
+    radial-gradient(circle at 74% 28%, #ffffff 0 3px, transparent 4px),
+    radial-gradient(circle at 88% 64%, #ffd6e8 0 3.5px, transparent 5px),
+    linear-gradient(120deg, #ff99c4 0%, #ffc2dc 50%, #f08ab8 100%);
+  color: #2c1020;
+  padding-bottom: 3.5rem;
+  border-bottom: 2px solid #ffb3d4;
+  box-shadow: 0 6px 28px rgba(255, 145, 194, 0.35);
+}
+
+.brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-shadow: 0 2px 8px rgba(155, 35, 90, 0.55);
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: 0 1px 6px rgba(155, 35, 90, 0.5);
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(165, 35, 95, 0.55);
+}
+
+.hero-content h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2.3rem);
+  color: #fff2f8;
+  text-shadow: 0 2px 12px rgba(165, 35, 95, 0.45);
+}
+
+.hero-content p {
+  margin-top: 0.4rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 1px 8px rgba(140, 25, 80, 0.5);
+}
+
+.card {
+  background: rgba(43, 18, 33, 0.94);
+  border: 2px solid #ff9ec7;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(255, 158, 199, 0.22);
+}
+
+.card h3 {
+  color: #ffc6df;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.avatar-ring {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #ffffff, #ff85b8, #ffd6e7);
+  box-shadow: 0 0 24px rgba(255, 166, 204, 0.8);
+}
+
+.avatar-ring img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.mini-card {
+  background: #38162a;
+  border: 1px solid rgba(255, 179, 212, 0.45);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+.mini-card span {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #ffb8d6;
+}
+
+.mini-card strong {
+  color: #ffffff;
+  font-size: 0.98rem;
+}
+
+.pill {
+  background: #ff9ec7;
+  color: #2b1020;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+.gallery-photo {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 179, 212, 0.5);
+  display: block;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #ffbad6;
+  font-size: 0.9rem;
+}

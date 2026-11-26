@@ -1,39 +1,17 @@
-/* ===== CSS GRID: overall page layout ===== */
-.container {
+.info-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "header    header"
-    "about     about"
-    "education experience"
-    "hobbies   goals"
-    "links     gallery"
-    "footer    footer";
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 0.85rem;
 }
-header      { grid-area: header; }
-#about      { grid-area: about; }
-#education  { grid-area: education; }
-#experience { grid-area: experience; }
-#hobbies    { grid-area: hobbies; }
-#goals      { grid-area: goals; }
-#links      { grid-area: links; }
-#gallery    { grid-area: gallery; }
-footer      { grid-area: footer; }
 
-/* Single column on small screens */
-@media (max-width: 700px) {
-  .container {
+.sections-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .sections-grid {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "about"
-      "education"
-      "experience"
-      "hobbies"
-      "goals"
-      "links"
-      "gallery"
-      "footer";
   }
 }

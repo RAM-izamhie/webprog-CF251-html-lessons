@@ -1,73 +1,51 @@
-/* ===== FLEXBOX: header and nav bar ===== */
-header {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-}
-header h1 { margin: 0; }
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  display: block;
-  background-color: #7e3ff2;
-  color: white;
-  text-decoration: none;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 14px;
-}
-nav a:hover { background-color: #5a2db0; }
-
-/* ===== FLEXBOX: hobbies and goals as chips ===== */
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-}
-.chips li {
-  background-color: #e0ccff;
-  padding: 6px 14px;
-  border-radius: 20px;
+  gap: 1rem;
+  padding: 1.1rem 2rem;
 }
 
-/* ===== FLEXBOX: links list ===== */
-.link-list {
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.hero-content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  list-style: none;
-  padding: 0;
+  padding: 1.25rem 2rem 0;
 }
 
-/* ===== FLEXBOX: center the gallery photo ===== */
-#gallery {
+.page-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1.5rem;
+  max-width: 1120px;
+  margin: -1.6rem auto 1rem;
+  padding: 0 1.25rem;
 }
 
-/* ===== FLEXBOX: footer ===== */
-footer {
+.about-card {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #5a2db0;
-  color: white;
-  padding: 15px;
-  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-/* Header stacks on small screens */
-@media (max-width: 700px) {
-  header { flex-direction: column; align-items: flex-start; }
+.avatar-ring {
+  flex-shrink: 0;
+}
+
+.about-details {
+  flex: 1 1 280px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
